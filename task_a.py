@@ -11,5 +11,6 @@ while x <=5:
         result = math.log10(math.log(x) + math.log(x, 3))     
     else:
         result = math.cos(5 * (x ** 2))
-    print("|x =", round(x, 3), "|", "y =", round(result, 4), "\t|")
+    print("|x =", round(x, 1), "|", "y =", round(result, 3), "\t|")
     x += 0.2
+print("|_______________|_______________|")
