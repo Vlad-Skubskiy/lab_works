@@ -1,17 +1,21 @@
 from math import pi
-x = 0.50
+x = 0.5
+
 print("________________________________")
 print("|", "x", "\t        |", "y", "            |")
 print("|_______________|_______________|")
+
 while x <= 0.95:
-    sum = 0
+    sum = (pi / 2) - x
     n = 1
-    while True:
-        f = (pi / 2) - x - ((((2 * n) - 1) / ((2 * n) * (2 * n + 1))) * x ** ((2 * n) + 1))
-        sum += f
+    while True:             
+        numerator = ((2 * n) - 1) * (x ** (2 * n + 1))
+        denominator = (2 * n) * (2 * n + 1)
+        f = numerator / denominator     
         if abs(f) > 0.001:
             break
+        sum -= f
         n += 1
-    print("|", "x =", round(x, 3), "\t|", "y =", round(sum, 4), "\t|")
-    x += 0.05
-print("|_______________|_______________|")
+    print("|", "x =", round(x, 2), "\t|", "y =", round(sum, 4), "\t|")
+    x += 0.05              #крок
+    print("|_______________|_______________|")
