@@ -90,10 +90,9 @@ class Wardrobe():
                         min_price = total_price
                         cheapest_look = (first_clothes, second_clothes)
         
-        if cheapest_look:
-            print("Cheapest Look:")
-            print(f"First Item: {cheapest_look[0]}")
-            print(f"Second Item: {cheapest_look[1]}\n")
+        print("Cheapest Look:")
+        print(f"First Item: {cheapest_look[0]}")
+        print(f"Second Item: {cheapest_look[1]}\n")
     
     def find_most_expensive_look(self):
         most_expensive_look = None
@@ -111,10 +110,9 @@ class Wardrobe():
                         max_price = total_price
                         most_expensive_look = (first_clothes, second_clothes)
         
-        if most_expensive_look:
-            print("Most Expensive Look:")
-            print(f"First Item: {most_expensive_look[0]}")
-            print(f"Second Item: {most_expensive_look[1]}\n")
+        print("Most Expensive Look:")
+        print(f"First Item: {most_expensive_look[0]}")
+        print(f"Second Item: {most_expensive_look[1]}\n")
             
 
 Shirt = Clothing("Casual Shirt", "A plain casual shirt", "Wardrobe", "Blue", "M", 100, ClothingType.SHIRT)
