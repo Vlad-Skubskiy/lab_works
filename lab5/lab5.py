@@ -62,7 +62,7 @@ class Wardrobe():
             look_options[item.size].append(item)
 
         for size, items in look_options.items():
-            if len(items) < 2:
+            if len(items) == 2:
                 continue
 
             for i in range(len(items)):
